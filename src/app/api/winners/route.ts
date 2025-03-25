@@ -1,37 +1,10 @@
 import { NextResponse } from "next/server";
 import { SupabaseClient, createClient } from "@supabase/supabase-js";
-import { createServerClient } from "@supabase/ssr";
-import { cookies } from "next/headers";
-// import { supabase } from "@/utils/supabase";
-// import { Database } from './database.types'; // Ensure this path is correct
 
 const supabaseUrl = process.env.SUPABASE_URL!;
 const supabaseKey = process.env.SUPABASE_API_KEY!;
 
 const supabase = createClient(supabaseUrl, supabaseKey);
-
-// export async function GET() {
-//   console.log(
-//     "hark we are here",
-//     process.env.SUPABASE_URL,
-//     process.env.SUPABASE_API_KEY
-//   );
-
-//   try {
-//     const client = await createClient(
-//       process.env.SUPABASE_URL!,
-//       process.env.SUPABASE_API_KEY!
-//     );
-//     const { error, data } = await client.from("winners").select();
-//     return NextResponse.json({ data, error, JSOND: JSON.stringify(data) });
-//   } catch (e) {
-//     console.log("hark an error is occurring", e);
-//     return NextResponse.json(
-//       { error: " HARK internal server error, no!!!!" },
-//       { status: 500 }
-//     );
-//   }
-// }
 
 export async function GET() {
   try {

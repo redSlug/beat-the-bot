@@ -17,7 +17,7 @@ create backend endpoints for 1) add winner 2) get winners
 the frontend react app calls the get winners endpoint and renders names of winners appearing in bubbles that float around on the screen. the bubble size is directly proportional to the score. have the frontend poll the backend every 2 seconds. do not include any frontend code for adding a winner
 ```
 
-Both the tech spec and the app were iterated upon. Some manual adjustents were needed to connect to supabase.
+Both the tech spec and the app were iterated upon. Some manual adjustents were needed, but most of the features were created by chatting with AI.
 
 A web application that displays a floating bubble visualization of winners and their scores using Supabase as the backend.
 
@@ -81,7 +81,7 @@ Request body:
 
 ```json
 {
-  "name": "John Doe",
+  "name": "octopus",
   "score": 100
 }
 ```
@@ -92,7 +92,7 @@ Example curl request:
 curl -X POST \
   http://localhost:3000/api/winners \
   -H "Content-Type: application/json" \
-  -d '{"name": "John Doe", "score": 100}'
+  -d '{"name": "octopus", "score": 100}'
 ```
 
 ## Deployment

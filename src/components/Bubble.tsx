@@ -16,12 +16,8 @@ export default function Bubble({ winner, maxScore }: BubbleProps) {
   // Define header height to avoid
   const headerHeight = 100;
   
-  // Calculate bubble size based on score (min 50px, max based on score ratio)
-  // Making bubbles 50% bigger
-  const minSize = 75; // 50 * 1.5
-  const maxSize = 225; // 150 * 1.5
-  const sizeRatio = maxScore > 0 ? winner.score / maxScore : 0.5;
-  const size = Math.max(minSize, sizeRatio * maxSize);
+  // Fixed bubble size of 150px diameter
+  const size = 150;
   
   // Define bubble color - pick a random color from the list
   const colors = [
