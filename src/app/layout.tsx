@@ -13,8 +13,11 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Leaderboard App",
-  description: "A floating bubble visualization of winners and their scores.",
+  title: "Winners | Beat The Bot",
+  description: "A floating bubble visualization of winners who have beaten the bot.",
+  icons: {
+    icon: '/favicon.ico'
+  }
 };
 
 export default function RootLayout({
