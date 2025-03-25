@@ -1,10 +1,5 @@
-import { NextResponse } from "next/server";
-import { SupabaseClient, createClient } from "@supabase/supabase-js";
-
-const supabaseUrl = process.env.SUPABASE_URL!;
-const supabaseKey = process.env.SUPABASE_API_KEY!;
-
-const supabase = createClient(supabaseUrl, supabaseKey);
+import { NextRequest, NextResponse } from "next/server";
+import { supabase } from "@/utils/supabase";
 
 export async function GET() {
   try {
@@ -26,9 +21,9 @@ export async function GET() {
   }
 }
 
-export async function POST(request: Request) {
+export async function POST(req: NextRequest) {
   try {
-    const { name, score } = await request.json();
+    const { name, score } = await req.json();
 
     if (!name || typeof score !== "number") {
       return NextResponse.json(
