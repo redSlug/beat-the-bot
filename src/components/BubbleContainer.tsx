@@ -82,7 +82,16 @@ export default function BubbleContainer() {
       <div style={containerStyle}>
         <div style={headerStyle}>
           <div style={{ fontSize: '28px', fontWeight: 'bold' }}>Winners</div>
-          <div style={{ fontSize: '18px', marginTop: '5px' }}>beat the bot</div>
+          <div style={{ fontSize: '18px', marginTop: '5px' }}>
+            <a 
+              href="https://redslug.github.io/tiles/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              style={{ color: '#FBE4D6', textDecoration: 'underline', cursor: 'pointer' }}
+            >
+              beat the bot
+            </a>
+          </div>
         </div>
         <div style={loadingStyle}>Loading winners...</div>
       </div>
@@ -94,7 +103,16 @@ export default function BubbleContainer() {
       <div style={containerStyle}>
         <div style={headerStyle}>
           <div style={{ fontSize: '28px', fontWeight: 'bold' }}>Winners</div>
-          <div style={{ fontSize: '18px', marginTop: '5px' }}>beat the bot</div>
+          <div style={{ fontSize: '18px', marginTop: '5px' }}>
+            <a 
+              href="https://redslug.github.io/tiles/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              style={{ color: '#FBE4D6', textDecoration: 'underline', cursor: 'pointer' }}
+            >
+              beat the bot
+            </a>
+          </div>
         </div>
         <div style={loadingStyle}>{error}</div>
       </div>
@@ -105,7 +123,16 @@ export default function BubbleContainer() {
     <div style={containerStyle}>
       <div style={headerStyle}>
         <div style={{ fontSize: '28px', fontWeight: 'bold' }}>Winners</div>
-        <div style={{ fontSize: '18px', marginTop: '5px' }}>beat the bot</div>
+        <div style={{ fontSize: '18px', marginTop: '5px' }}>
+          <a 
+            href="https://redslug.github.io/tiles/" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            style={{ color: '#FBE4D6', textDecoration: 'underline', cursor: 'pointer' }}
+          >
+            beat the bot
+          </a>
+        </div>
       </div>
       
       {winners.length === 0 ? (
