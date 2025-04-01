@@ -1,6 +1,8 @@
 # Beat the Bot!
 
-This app was created with the help of AI. The tech spec was created using [OpenAI](https://openai.com/), which was shared and created in collaboration with [Cursor IDE](https://www.cursor.com/).
+This app was created with the help of AI. The tech spec was created using [OpenAI](https://openai.com/), which was shared and created in collaboration with [Cursor IDE](https://www.cursor.com/). This app inspired many people to "Beat the Bot" at a "Demopalooza" demo day:
+
+<img width="814" alt="image" src="https://github.com/user-attachments/assets/549d7cc4-a6b6-4134-a27a-9299c3e11bf2" />
 
 This is the original prompt given to OpenAI:
 
