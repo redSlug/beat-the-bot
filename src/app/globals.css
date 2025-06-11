@@ -1,8 +1,8 @@
 :root {
-  --peach-light: #FBE4D6;
-  --blue-deep: #261FB3;
+  --peach-light: #fbe4d6;
+  --blue-deep: #261fb3;
   --blue-dark: #161179;
-  --blue-very-dark: #0C0950;
+  --blue-very-dark: #0c0950;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -19,8 +19,9 @@ body {
   height: 100%;
   background-color: var(--blue-very-dark);
   color: var(--peach-light);
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-    Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  font-family:
+    -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
+    Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
 }
 
 * {

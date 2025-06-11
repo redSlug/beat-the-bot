@@ -6,11 +6,14 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "prettier": "prettier --write --ignore-path .gitignore ."
   },
   "dependencies": {
-    "@supabase/supabase-js": "^2.49.3",
+    "@libsql/client": "^0.15.9",
     "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "drizzle-orm": "^0.44.2",
     "next": "15.2.4",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
@@ -20,6 +23,8 @@
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "drizzle-kit": "^0.31.1",
+    "prettier": "^3.5.3",
     "typescript": "^5"
   }
 }
